@@ -5,7 +5,12 @@ module.exports = {
 		new DefinePlugin({
 			TRUE: true,
 			FALSE: false,
+			NULL: null,
 			UNDEFINED: undefined,
+			NUMBER: 100.05,
+			ZERO: 0,
+			ONE: 1,
+			BIGINT: 9007199254740991n,
 			FUNCTION: /* istanbul ignore next */ function(a) {
 				return a + 1;
 			},
