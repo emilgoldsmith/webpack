@@ -12,8 +12,8 @@ module.exports = {
 			ONE: 1,
 			STRING: '"string"',
 			EMPTY_STRING: '""',
-			BIGINT: 9007199254740991n,
-			ZERO_BIGINT: 0n,
+			BIGINT: BigInt(9007199254740991),
+			ZERO_BIGINT: BigInt(0),
 			FUNCTION: /* istanbul ignore next */ function(a) {
 				return a + 1;
 			},
